@@ -15,7 +15,7 @@ namespace _02_Casa.Object
             this.position = position;
             this.front = front;
             this.up = up;
-            this.speed = 0.02f;
+            this.speed = 0.001f;
         }
 
         public void setRight()

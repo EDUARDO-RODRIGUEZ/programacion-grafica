@@ -36,12 +36,11 @@ namespace _02_Casa.Graphic
 
         public void setModel(GameObject gameObject)
         {
-            time += 0.00001;
+            time += 0.0001;
             // gameObject.setRotation(new Vector3(gameObject.getRotation().X  ((float)time) , gameObject.getRotation().Y * ((float)time) , gameObject.getRotation().Z * ((float)time)));
             Matrix4 model = Matrix4.Identity;
 
-            // model = model * Matrix4.CreateRotationY((float)time * 13.0f);
-            // model = model * Matrix4.CreateRotationZ((float)time * 13.0f);
+            model = model * Matrix4.CreateRotationY((float)time * 1);
 
             model = model * Matrix4.CreateTranslation(gameObject.getPosition());
 

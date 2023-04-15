@@ -9,7 +9,7 @@ namespace _02_Casa
     {
         static void Main(string[] args)
         {
-            using (var window = new Window(GameWindowSettings.Default, new Vector2i(400, 600), "02-Casa"))
+            using (var window = new Window(GameWindowSettings.Default, new Vector2i(600, 800), "02-Casa"))
             {
                 window.Run();
             }

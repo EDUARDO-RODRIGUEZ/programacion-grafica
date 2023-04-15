@@ -128,8 +128,8 @@ namespace _02_Casa
                 10,13,12
              });
 
-            gameObject = new GameObject(new Vector3(0, 0, -3), new Vector3(0.5f, 1.0f, 0.0f), new Vector3(1, 1, 1), mesh);
-            gameObjectTecho = new GameObject(new Vector3(0, 0, -3), new Vector3(0.5f, 1.0f, 0.0f), new Vector3(1, 1, 1), techo);
+            gameObject = new GameObject(new Vector3(0, 0, -1), new Vector3(0, 0, 0), new Vector3(1, 1, 1), mesh);
+            gameObjectTecho = new GameObject(new Vector3(0, 0, -1), new Vector3(0, 0, 0), new Vector3(1, 1, 1), techo);
         }
 
         protected override void OnLoad()
@@ -169,12 +169,13 @@ namespace _02_Casa
             }
             if (KeyboardState.IsKeyDown(Keys.Space))
             {
-              camera.setDown();
+                camera.setDown();
             }
             if (KeyboardState.IsKeyDown(Keys.LeftShift))
             {
                 camera.setUp();
             }
+
             base.OnUpdateFrame(args);
         }
 
