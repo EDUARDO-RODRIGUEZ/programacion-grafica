@@ -24,6 +24,7 @@ namespace _03_Casa
             casa1.setroofColor(new Vector3(0.8f,0.2f,0.2f));
             casa1.loadFace();
 
+            /*
             Casa casa2 = new Casa(new Punto(0, 0, -40), 10, 10, 10);
             casa2.setbodyColor(new Vector3(0.7f, 0.5f, 02f));
             casa2.setroofColor(new Vector3(0.9f, 0.6f, 0.2f));
@@ -41,6 +42,9 @@ namespace _03_Casa
             this.objetos.Add(casa2);
             this.objetos.Add(auto1);
             this.objetos.Add(auto2);
+            */
+
+            this.objetos.Add(casa1);
         }
 
         public void draw()

@@ -1,0 +1,30 @@
+face 0
+origenX - ancho, origenY + alto, origenZ + profundidad
+origenX + ancho, origenY + alto, origenZ + profundidad
+origenX + ancho, origenY - alto, origenZ + profundidad
+origenX - ancho, origenY - alto, origenZ + profundidad
+face 1
+origenX - ancho, origenY + alto, origenZ - profundidad
+origenX + ancho, origenY + alto, origenZ - profundidad
+origenX + ancho, origenY - alto, origenZ - profundidad
+origenX - ancho, origenY - alto, origenZ - profundidad
+face 2
+origenX + ancho, origenY + alto, origenZ - profundidad
+origenX + ancho, origenY + alto, origenZ + profundidad
+origenX + ancho, origenY - alto, origenZ + profundidad
+origenX + ancho, origenY - alto, origenZ - profundidad
+face 3
+origenX - ancho, origenY + alto, origenZ - profundidad
+origenX - ancho, origenY + alto, origenZ + profundidad
+origenX - ancho, origenY - alto, origenZ + profundidad
+origenX - ancho, origenY - alto, origenZ - profundidad
+face 4
+origenX - ancho, origenY + alto, origenZ - profundidad
+origenX + ancho, origenY + alto, origenZ - profundidad
+origenX + ancho, origenY + alto, origenZ + profundidad
+origenX - ancho, origenY + alto, origenZ + profundidad
+face 5
+origenX - ancho, origenY - alto, origenZ - profundidad
+origenX + ancho, origenY - alto, origenZ - profundidad
+origenX + ancho, origenY - alto, origenZ + profundidad
+origenX - ancho, origenY - alto, origenZ + profundidad

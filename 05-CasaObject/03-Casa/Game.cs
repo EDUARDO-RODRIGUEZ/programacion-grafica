@@ -3,11 +3,8 @@ using OpenTK.Graphics;
 using OpenTK.Graphics.OpenGL;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _03_Casa
+namespace _04_CasaObject
 {
     class Game : GameWindow
     {
@@ -15,6 +12,7 @@ namespace _03_Casa
         private float radio = 0;
         private Scene scene;
         private Plano plano;
+
         public Game(int width, int height, string title) : base(width, height, GraphicsMode.Default, title) { }
 
         protected override void OnLoad(EventArgs e)
@@ -23,6 +21,20 @@ namespace _03_Casa
             GL.ClearColor(0.47f, 0.32f, 0.23f, 1);
             scene = new Scene();
             plano = new Plano(new Punto(), 100, 100, 100);
+
+            Objeto casa1 = new Objeto(new Punto(0, 0, 0), 5, 5, 5, "objetos\\casa.txt");
+            Objeto auto1 = new Objeto(new Punto(50, 0, 0), 3, 3, 3, "objetos\\auto.txt");
+            Objeto casa2 = new Objeto(new Punto(0, 0, -40), 5, 5, 5, "objetos\\casa.txt");
+            Objeto auto2 = new Objeto(new Punto(50, 0, -40), 3, 3, 3, "objetos\\auto.txt");
+            casa1.loadFace();
+            auto1.loadFace();
+            casa2.loadFace();
+            auto2.loadFace();
+            scene.addObject(casa1);
+            scene.addObject(auto1);
+            scene.addObject(casa2);
+            scene.addObject(auto2);
+
         }
 
         protected override void OnUpdateFrame(FrameEventArgs e)
