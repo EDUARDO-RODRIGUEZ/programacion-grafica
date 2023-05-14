@@ -15,5 +15,4 @@ namespace _07_CasaObject
                 game.Run(30.0);
             }
         }
-    }
 }
