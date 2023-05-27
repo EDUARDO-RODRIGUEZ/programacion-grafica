@@ -80,7 +80,6 @@ namespace _08_Animacion
                 comboBoxFace.Enabled = true;
                 comboBoxFace.DataSource = scene.getObject(key).getFaces().Keys.Prepend("Objeto").ToList();
             }
-
         }
 
         private void comboBoxObjeto_SelectedValueChanged(object sender, EventArgs e)
